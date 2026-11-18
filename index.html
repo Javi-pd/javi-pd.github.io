@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Este es el título que aparece en la pestaña del navegador -->
+  <title>Javi · Mi web</title>
+  <style>
+    /* ===== ESTILOS (colores, tamaños, tipos de letra) ===== */
+    :root {
+      --fondo: #f6f4ef;
+      --texto: #1f2328;
+      --suave: #5b6169;
+      --acento: #1a5f7a;
+      --tarjeta: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    header { margin-bottom: 48px; }
+    .saludo {
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--acento);
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 48px; line-height: 1.1; margin-bottom: 16px; }
+    .intro { font-size: 20px; color: var(--suave); }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+      border-bottom: 2px solid var(--acento);
+      display: inline-block;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+    .tarjeta {
+      background: var(--tarjeta);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .tarjeta h3 { font-family: system-ui, sans-serif; font-size: 16px; margin-bottom: 4px; }
+    .tarjeta p { color: var(--suave); font-size: 16px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    footer {
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+      color: var(--suave);
+      border-top: 1px solid #ddd;
+      padding-top: 16px;
+      margin-top: 56px;
+    }
+    a { color: var(--acento); }
+  </style>
+</head>
+<body>
+  <main>
+
+    <!-- ===== CABECERA ===== -->
+    <header>
+      <p class="saludo">Hola, soy</p>
+      <h1>Javi</h1>
+      <p class="intro">Estudiante de 1º de ADE en la Universidad de Oviedo. Esta es mi primera web, publicada con GitHub Pages.</p>
+    </header>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Me interesa la economía, la empresa y aprender herramientas que me ayuden en la carrera y en el futuro profesional. Ahora mismo estoy aprendiendo a usar GitHub.</p>
+    </section>
+
+    <!-- ===== QUÉ ESTOY APRENDIENDO ===== -->
+    <section>
+      <h2>Qué estoy aprendiendo</h2>
+      <ul>
+        <li>Git y GitHub: repositorios, commits, ramas y Pull Requests</li>
+        <li>Publicar webs con GitHub Pages</li>
+        <li>Trabajar con Claude para crear proyectos</li>
+      </ul>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <!-- Para añadir un proyecto nuevo, copia un bloque <div class="tarjeta"> ... </div> y cambia el texto -->
+    <section>
+      <h2>Proyectos</h2>
+      <div class="tarjeta">
+        <h3>Mi primer repositorio</h3>
+        <p>Donde aprendí a hacer commits, ramas y Pull Requests.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Esta web</h3>
+        <p>Mi página personal, alojada gratis en GitHub Pages.</p>
+      </div>
+    </section>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+      Hecho por Javi · Publicado con GitHub Pages
+    </footer>
+
+  </main>
+</body>
+</html>
